@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.1.4](https://github.com/spotify/confidence-openfeature-provider-python/compare/v0.1.3...v0.1.4) (2023-11-20)
+
+
+### 🐛 Bug Fixes
+
+* fixes to enable mypy in premerge ([#42](https://github.com/spotify/confidence-openfeature-provider-python/issues/42)) ([c1d65bf](https://github.com/spotify/confidence-openfeature-provider-python/commit/c1d65bf3a7338cee920ce3936e2bcbc6a98e4095))
+
+
+### 🧹 Chore
+
+* update openfeature sdk version to 0.4.1 ([#35](https://github.com/spotify/confidence-openfeature-provider-python/issues/35)) ([16ee55f](https://github.com/spotify/confidence-openfeature-provider-python/commit/16ee55f804b3a488926647a697cf37a4bf25af69))
+
+
+### 📚 Documentation
+
+* Add Confidence link to the README ([#44](https://github.com/spotify/confidence-openfeature-provider-python/issues/44)) ([bee1d17](https://github.com/spotify/confidence-openfeature-provider-python/commit/bee1d175a0478abc18a196d3bd2f48ffe8ab0005))
+
 ## [0.1.3](https://github.com/spotify/confidence-openfeature-provider-python/compare/v0.1.2...v0.1.3) (2023-11-16)
 
 
