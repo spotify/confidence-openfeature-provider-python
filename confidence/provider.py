@@ -1,4 +1,4 @@
-import dataclasses
+confidence/provider.pyimport dataclasses
 from typing import Any, Dict, List, Optional, Type, Union, get_args, get_origin
 from typing_extensions import TypeGuard
 from enum import Enum
@@ -21,6 +21,7 @@ from .names import FlagName, VariantName
 
 EU_RESOLVE_API_ENDPOINT = "https://resolver.eu.confidence.dev/v1"
 US_RESOLVE_API_ENDPOINT = "https://resolver.us.confidence.dev/v1"
+GLOBAL_RESOLVE_API_ENDPOINT = "https://resolver.confidence.dev/v1"
 
 
 Primitive = Union[str, int, float, bool, None]
@@ -48,6 +49,7 @@ class Region(Enum):
 
     EU = EU_RESOLVE_API_ENDPOINT
     US = US_RESOLVE_API_ENDPOINT
+    GLOBAL = GLOBAL_RESOLVE_API_ENDPOINT
 
 
 @dataclasses.dataclass
@@ -61,7 +63,7 @@ class ConfidenceOpenFeatureProvider(AbstractProvider):  # type: ignore
     def __init__(
         self,
         client_secret: str,
-        region: Region = Region.EU,
+        region: Region = Region.GLOBAL,
         apply_on_resolve: bool = True,
     ):
         self._client_secret = client_secret
