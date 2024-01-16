@@ -69,7 +69,7 @@ class ResolveResult(object):
     token: str
 
 
-class ConfidenceOpenFeatureProvider(AbstractProvider):  # type: ignore
+class ConfidenceOpenFeatureProvider(AbstractProvider):
     def __init__(
         self,
         client_secret: str,
